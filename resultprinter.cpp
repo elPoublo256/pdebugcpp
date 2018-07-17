@@ -34,12 +34,12 @@ void FunctionLogs::printLogs(std::ostream &out)
 {
   int sec;
   int nanosec;
-  for(std::pair<time_t, std::string> log : logs)
-    {
-      nanosec = log.first % 1000000000;
-      sec = (int)log.first / 1000000000;
-      out<< sec <<"s "<<nanosec<<"ns"<<"::  -" << log.second << std::endl;
-    }
+  //for(std::pair<time_t, std::string> log : logs)
+  //  {
+  //    nanosec = log.first % 1000000000;
+  //    sec = (int)log.first / 1000000000;
+  //    out<< sec <<"s "<<nanosec<<"ns"<<"::  -" << log.second << std::endl;
+  //  }
 }
 void FunctionLogs::printLogsInFile()
 {
